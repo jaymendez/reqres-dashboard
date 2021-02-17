@@ -1,12 +1,19 @@
 import Repository from "./Repository";
+import { IOptions } from "./types"; 
+const resource = "/users";
 
-// const resource = "/movies";
-
-const getMovies = async ({}) => {
-	const data = await Repository.get("/");
-	return data;
+const getUsers = async (options: IOptions) => {
+  let query = `${resource}`;
+	if (options) {
+		const { page } = options;
+		if (page) {
+			query = `${query}?page=${page}`;
+		}
+	}
+  const data = await Repository.get(query);
+  return data;
 };
 
 export default {
-	getMovies,
+  getUsers,
 };
