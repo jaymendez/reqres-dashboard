@@ -15,6 +15,8 @@ export const Container = styled.div`
     height: 10px;
   }
 	/* transform: rotate(180deg); */
+		transform: scaleY(-1);
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
@@ -35,6 +37,8 @@ export const Container = styled.div`
     margin-left: 110px;
   }
   table {
+		/* transform: scaleY(-1); */
+		transform: scaleY(-1);
     width: 100%;
     margin: 0;
     table-layout: fixed;

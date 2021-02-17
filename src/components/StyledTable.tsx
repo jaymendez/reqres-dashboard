@@ -1,6 +1,12 @@
-import React from 'react'
+import { FunctionComponent } from 'react'
+import { IUser } from './types'
 
-const Table = ({ data, onRowClick }) => {
+interface ITable {
+	data: IUser[];
+	onRowClick: (item: IUser) => void;
+}
+
+const Table: FunctionComponent<ITable> = ({ data, onRowClick }) => {
 	return (
 		<table>
 			<thead>
@@ -12,7 +18,7 @@ const Table = ({ data, onRowClick }) => {
 				</tr>
 			</thead>
 			<tbody>
-				{data?.map((item) => (
+				{data?.map((item: IUser) => (
 					<tr onClick={() => onRowClick(item)}>
 						<td>{item.email}</td>
 						<td>{item.last_name}</td>
