@@ -12,7 +12,7 @@ const Table = ({ data, onRowClick }) => {
 				</tr>
 			</thead>
 			<tbody>
-				{data.map((item) => (
+				{data?.map((item) => (
 					<tr onClick={() => onRowClick(item)}>
 						<td>{item.email}</td>
 						<td>{item.last_name}</td>
