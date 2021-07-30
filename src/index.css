@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+	height: 100vh;
+}
+
+.App {
+	height: 100%;
+}
+
+.detail-key {
+	float: right;
+	padding-right: 15px;
+}
+
+.detail-value {
+	color: #46c15b;
+}
+
+.ant-modal-header {
+	background-color: #aaa;
+	border-radius: 10px;
+}
+
+.ant-modal-content {
+	border-radius: 10px;
+	border: 1px solid #aaa;
+}
+
+.close-btn {
+	background-color: #b1abab30 !important;
+	border-radius: 5px !important;
+	border: 1px solid #aaa !important;
+	font-weight: 500 !important;
+}
+
+.close-btn:hover {
+	color: black !important;
+}
+
+.ant-table-tbody tr:nth-child(even) {
+	background: #F0F0F0 !important;
+	background-color: #F0F0F0 !important;
+	color: #00994D !important;
+}
+
+.ant-table-tbody tr:nth-child(even) td {
+	background: #F0F0F0 !important;
+}
+
+.ant-table-tbody tr:nth-child(odd) {
+	background: #FFFFFF !important;
+	background-color: #FFFFFF !important;
+	color: #00994D !important;
+}
+
+.ant-table-tbody tr:nth-child(odd) td {
+	background: #FFFFFF !important;
+}
+
+.ant-table-thead tr th:not(.ant-table-cell-scrollbar) {
+	background-color: #423f3f !important;
+}
+
+.ant-modal-header {
+	background-color: grey !important;
+	text-align: center;
+}
+
+.ant-pagination {
+	margin-top: 15px !important;
+}
+
+.ant-pagination .ant-pagination-item a {
+	color: #66B2FF;
+}
